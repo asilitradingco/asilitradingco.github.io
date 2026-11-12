@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" role="img" aria-label="Asili stamp logo: a coffee bean growing roots">
+  <defs>
+    <filter id="worn" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2.2" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.45" numOctaves="3" seed="11" result="n2"/>
+      <feColorMatrix in="n2" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  -4 0 0 0 3.1" result="mask"/>
+      <feComposite in="d" in2="mask" operator="in"/>
+    </filter>
+    <path id="top" d="M 46 150 A 104 104 0 0 1 254 150"/>
+    <path id="bottom" d="M 38 150 A 112 112 0 0 0 262 150"/>
+  </defs>
+  <g filter="url(#worn)" fill="none" stroke="#B4472C" color="#B4472C">
+    <!-- rings -->
+    <circle cx="150" cy="150" r="140" stroke-width="7"/>
+    <circle cx="150" cy="150" r="128" stroke-width="2"/>
+    <circle cx="150" cy="150" r="82" stroke-width="2"/>
+    <!-- ring text -->
+    <text font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="30" fill="#B4472C" stroke="none" letter-spacing="12">
+      <textPath href="#top" startOffset="50%" text-anchor="middle">ASILI</textPath>
+    </text>
+    <text font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="13" fill="#B4472C" stroke="none">
+      <textPath href="#bottom" startOffset="50%" text-anchor="middle" letter-spacing="1.8">FROM EAST AFRICA ✦ GREEN COFFEE</textPath>
+    </text>
+    <!-- side stars -->
+    <path d="M 26 150 l 4 -4 l 4 4 l -4 4 z M 266 150 l 4 -4 l 4 4 l -4 4 z" fill="#B4472C" stroke="none"/>
+    <!-- coffee bean -->
+    <g transform="translate(150 122) rotate(-18)">
+      <ellipse cx="0" cy="0" rx="26" ry="36" fill="#B4472C" stroke="none"/>
+      <path d="M 2 -34 C -12 -16, 14 14, -2 34" stroke="#FFF4E2" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+    <!-- roots -->
+    <g stroke-width="3.2" stroke-linecap="round">
+      <path d="M 156 156 C 156 172, 150 182, 150 198 C 150 208, 146 214, 142 222"/>
+      <path d="M 151 180 C 140 186, 132 190, 120 206"/>
+      <path d="M 153 176 C 166 182, 174 192, 182 206"/>
+      <path d="M 150 196 C 162 202, 166 212, 166 222"/>
+      <path d="M 127 196 C 122 198, 116 200, 112 196" stroke-width="2.2"/>
+      <path d="M 174 196 C 180 196, 186 194, 190 190" stroke-width="2.2"/>
+      <path d="M 146 212 C 138 214, 134 220, 132 224" stroke-width="2.2"/>
+    </g>
+  </g>
+</svg>

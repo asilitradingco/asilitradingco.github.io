@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -300 1600 1000" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Illustration of sunlit hills planted with rows of coffee">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF4E2"/>
+      <stop offset="0.55" stop-color="#FCE2A8"/>
+      <stop offset="1" stop-color="#F7C26B"/>
+    </linearGradient>
+    <pattern id="rows" width="34" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(-8)">
+      <circle cx="10" cy="11" r="7" fill="#4F5E2C" opacity=".85"/>
+      <circle cx="27" cy="11" r="6" fill="#5F7238" opacity=".85"/>
+    </pattern>
+    <pattern id="rows2" width="46" height="30" patternUnits="userSpaceOnUse" patternTransform="rotate(6)">
+      <circle cx="12" cy="15" r="9" fill="#3E4A22"/>
+      <circle cx="34" cy="15" r="8" fill="#4F5E2C"/>
+      <circle cx="16" cy="9" r="2.4" fill="#D94A2B"/>
+      <circle cx="37" cy="10" r="2.2" fill="#E8742C"/>
+    </pattern>
+  </defs>
+  <rect y="-300" width="1600" height="1000" fill="url(#sky)"/>
+  <!-- sun -->
+  <circle cx="1220" cy="250" r="150" fill="#F7B733" opacity=".9"/>
+  <circle cx="1220" cy="250" r="190" fill="#F7B733" opacity=".18"/>
+  <!-- far hills -->
+  <path d="M0 430 C 200 360, 380 400, 560 370 S 900 300, 1100 360 S 1420 330, 1600 380 V 700 H 0 Z" fill="#E9A15A"/>
+  <path d="M0 480 C 240 420, 420 470, 640 430 S 1000 380, 1240 440 S 1500 420, 1600 450 V 700 H 0 Z" fill="#D9622B"/>
+  <path d="M0 480 C 240 420, 420 470, 640 430 S 1000 380, 1240 440 S 1500 420, 1600 450 V 700 H 0 Z" fill="url(#rows)" opacity=".55"/>
+  <!-- near hills -->
+  <path d="M0 560 C 260 500, 520 560, 780 520 S 1260 470, 1600 540 V 700 H 0 Z" fill="#B4472C"/>
+  <path d="M0 560 C 260 500, 520 560, 780 520 S 1260 470, 1600 540 V 700 H 0 Z" fill="url(#rows2)" opacity=".8"/>
+  <path d="M0 640 C 300 600, 700 650, 1000 620 S 1400 600, 1600 630 V 700 H 0 Z" fill="#4A2C1D"/>
+</svg>
